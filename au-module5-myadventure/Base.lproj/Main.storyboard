@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="au_module5_myadventure" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dungeon" translatesAutoresizingMaskIntoConstraints="NO" id="G00-FA-hRh">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ncz-e8-w7l">
+                                <rect key="frame" x="25" y="143" width="343" height="616"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You found a map to dungeon treasure. Let's find it!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTn-c0-DQd" userLabel="messageLabel">
+                                        <rect key="frame" x="35.333333333333343" y="0.0" width="272.33333333333326" height="253.66666666666666"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" red="0.65164749239999997" green="0.22980829250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" red="0.65164749239999997" green="0.22980829250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="-1" height="1"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="c6L-fX-3pu">
+                                        <rect key="frame" x="25" y="253.66666666666671" width="293" height="362.33333333333326"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBZ-N8-jzL" userLabel="choiceOne">
+                                                <rect key="frame" x="0.0" y="0.0" width="293" height="173.66666666666666"/>
+                                                <color key="tintColor" red="0.65164749239999997" green="0.22980829250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Choice1" cornerStyle="small" titleAlignment="center">
+                                                    <backgroundConfiguration key="background" strokeWidth="2">
+                                                        <color key="strokeColor" red="0.65164749239999997" green="0.22980829250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                                    <color key="baseForegroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="submitChoice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wev-F3-unn"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XyS-Ay-rdO" userLabel="choiceTwo">
+                                                <rect key="frame" x="0.0" y="188.66666666666669" width="293" height="173.66666666666669"/>
+                                                <color key="tintColor" red="0.65164749239999997" green="0.22980829250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <buttonConfiguration key="configuration" style="tinted" title="Choice1" cornerStyle="small" titleAlignment="center">
+                                                    <backgroundConfiguration key="background" strokeWidth="2">
+                                                        <color key="strokeColor" red="0.65164749239999997" green="0.22980829250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </backgroundConfiguration>
+                                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="25"/>
+                                                    <color key="baseForegroundColor" systemColor="systemGroupedBackgroundColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="submitChoice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LTI-7F-Qbw"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="c6L-fX-3pu" secondAttribute="trailing" constant="25" id="1Qc-xm-Mob"/>
+                                    <constraint firstItem="eTn-c0-DQd" firstAttribute="height" secondItem="c6L-fX-3pu" secondAttribute="height" multiplier="0.7" id="8p4-7V-SFz"/>
+                                    <constraint firstItem="c6L-fX-3pu" firstAttribute="leading" secondItem="ncz-e8-w7l" secondAttribute="leading" constant="25" id="UW0-Mv-Ycs"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ncz-e8-w7l" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="143" id="8C4-ar-3vv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ncz-e8-w7l" secondAttribute="trailing" constant="25" id="LoJ-FS-8gd"/>
+                            <constraint firstItem="G00-FA-hRh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S5f-mg-mH4"/>
+                            <constraint firstItem="G00-FA-hRh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="VsR-U0-4b2"/>
+                            <constraint firstAttribute="bottom" secondItem="G00-FA-hRh" secondAttribute="bottom" id="WQm-x2-DIQ"/>
+                            <constraint firstItem="G00-FA-hRh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="awo-mj-RsE"/>
+                            <constraint firstItem="ncz-e8-w7l" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="bZW-Oi-Rzv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ncz-e8-w7l" secondAttribute="bottom" constant="25" id="plc-YY-K9a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="choiceOne" destination="nBZ-N8-jzL" id="wNR-kP-JjY"/>
+                        <outlet property="choiceTwo" destination="XyS-Ay-rdO" id="8wT-9o-gSG"/>
+                        <outlet property="messageLabel" destination="eTn-c0-DQd" id="Kz5-pe-F7x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.21374045801527" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dungeon" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
